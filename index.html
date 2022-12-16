@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sanoq Sistemalari 1.0</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css.map">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="bootstrap/bootstrap.js"></script>
+</head>
+<body onload="loadFunction()">
+    <center>
+        <div class="alert alert-danger alert-dismissible xatolik" id="xato">
+         <strong>Diqqat!</strong> Siz sanoq sistemasida xato son kiritdingiz! Bu yomon 
+         natijaga olib keladi
+       </div>
+     </center>
+    <center> 
+    <div class="input"> 
+    <div> 
+      
+    Kiruvchi sonning sistemasini tanlang: 
+     <select name="sistema" id="select"> 
+    </select> 
+    </div>
+    <div>
+     Qiymatni tanlang: 
+     <input type="text" placeholder="Sonni kiriting" id="calc"> 
+    </div>
+    <div>
+     Chiquvchi sonning sistemasi tanlang: 
+     <select name="sistema" id="select1">
+    </select>  
+     
+    </div>
+    </div>
+    </center>
+    <center><button id="calculating" onclick="systemFunction()">Hisobla</button></center>
+    <div class="result ml-5">
+        <div id="result">
+            Natija: 
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

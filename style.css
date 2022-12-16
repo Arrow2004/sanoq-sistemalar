@@ -1,0 +1,134 @@
+body{
+    background-image: url(img107.jpg);
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+}
+div.input
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-between;
+}
+div.input div, #result
+{
+    margin: 15px;
+    justify-items: flex-end;
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+    background: none;
+}
+button{
+    margin: 15px;
+    justify-items: flex-end;
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+    background: none;
+    border: yellow 2px solid;
+    outline: none;
+    padding: 5px;
+}
+input
+{
+    background: none;
+    border: yellow 2px solid;
+    outline: none;
+    padding: 5px;
+    width: 150pt
+    
+}
+::placeholder
+{
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+}
+select
+{
+    background: none;
+    border: yellow 2px solid;
+    outline: none;
+    padding: 5px;
+    width: 150pt;
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+}
+.selceted
+{
+    background: #111111;
+    border: yellow 2px solid;
+    outline: none;
+    padding: 5px;
+    width: 150pt;
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+    cursor: pointer;
+    transition: 1s ease background;
+}
+.selceted:hover{
+    background: yellow;
+    color: white;
+}
+.xatolik
+{
+    position: fixed;
+    width: 50%;
+    display: none;
+    font-size: 10pt;
+}
+.xatolik.animate
+{
+    animation: slidedown 1s ease-in-out 0s normal forwards running;
+    display: block;
+}
+.xatolik.animateup
+{
+    animation: slideup 1s ease-in-out 0s normal forwards running;
+    display: block;
+}
+table
+{
+   margin-top: 100px;
+}
+#calculating{
+    cursor: pointer;
+    outline: none;
+    border-bottom-right-radius: 15px 25px;
+    border-top-left-radius: 15px 25px;
+    padding: 10px;
+    transition: background, border-radius 1.5s ease;
+}
+#calculating:hover{
+    border-radius: 0px;
+    border-bottom-left-radius: 15px 25px;
+    border-top-right-radius: 15px 25px;
+    padding: 10px;
+    background: #111111;
+}
+@keyframes slidedown
+{
+    0% {
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes slideup
+{
+    0% {
+        opacity: 1;
+        
+    }
+    100% {
+        transform: translateY(-500px);
+        opacity: .5;
+    }
+}
